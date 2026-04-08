@@ -8,10 +8,10 @@ from bson import ObjectId
 # convert MongoDB data → Python dic
 
 def todo_helper(todo) -> dict:
-    return
-    {
+    print("check", todo)
+    return {
         "id"          : str(todo["_id"]),
         "title"       : str(todo["title"]),
         "description" : todo.get("description"),
         "completed"   : todo["completed"]
-    }
+        }

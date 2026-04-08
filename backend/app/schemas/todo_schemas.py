@@ -1,6 +1,6 @@
 #  ← Pydantic schemas
 
-from pydantic import baseModel
+from pydantic import BaseModel
 from typing import Optional
 
 class Todo(BaseModel):
@@ -8,7 +8,7 @@ class Todo(BaseModel):
     description : Optional[str] = None
     completed: Optional[bool] = False   # default value
 
-class UpdateTodo(baseModel):
+class UpdateTodo(BaseModel):
     title: Optional[str]
     description : Optional[str]
-    completed: Optional[bool] = False
+    completed: Optional[bool] = None
