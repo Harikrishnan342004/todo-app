@@ -1,0 +1,10 @@
+fastapi
+unicorn
+pymongo
+motor
+python-dotenv
+pydantic
+bson
+
+
+# pip install -r requirements.txt
