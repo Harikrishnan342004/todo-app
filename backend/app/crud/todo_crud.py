@@ -1,9 +1,9 @@
-#  ← DB logic
+#  ← DB logic...
 
 from app.db.database import todo_collection
 from app.models.todo_model import todo_helper
 from bson import ObjectId
-
+  
 async def create_todo(todo_data: dict):
     new_todo = await todo_collection.insert_one(todo_data)
     created = await todo_collection.find_one({"_id": new_todo.inserted_id})
