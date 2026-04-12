@@ -39,7 +39,7 @@ function Home() {
 
   return (
     <Box>
-      {/* Navbar */}
+    
       <Box
         sx={{
           display: "flex",
